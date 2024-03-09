@@ -14,10 +14,6 @@ body {
     height: 100vh;
 }
 
-/* main {
-    padding-top: 70px;
-} */
-
 header {
     position: fixed;
     width: 100%;
@@ -71,6 +67,31 @@ footer {
     width: 100%;
 }
 
+.habilidades {
+    display: flex;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.titulo {
+    color: #142c41;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    justify-content: center;
+    text-align: center;
+    margin: 5%;
+    width: 100%;
+}
+
+.metade {
+    gap: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 #container {
     width: 350px;
     height: 350px;
@@ -92,6 +113,16 @@ footer {
     font-weight: 600;
     font-size: 1.3rem;
     line-height: 1.5rem;
+    text-align: justify;
+}
+
+.font {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(83, 83, 83);
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: justify;
 }
 
 #home-section {
@@ -102,17 +133,17 @@ footer {
     justify-content: center;
     width: 100%;
     height: 100vh;
+    justify-content: space-between;
 }
 
 #second-section {
     background-color: #ebebeb;
     padding: 10%;
-    gap: 10%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
 }
 
 #third-section {
@@ -133,7 +164,7 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
 }
 
 #github {
