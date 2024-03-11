@@ -1,0 +1,80 @@
+#container {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#Lorena {
+    color: #142c41;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#sobre {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(83, 83, 83);
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+#home-section {
+    padding: 10%;
+    gap: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+#second-section {
+    background-color: #ebebeb;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#third-section {
+    padding: 10%;
+    gap: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#fourth-section {
+    background-color: #ebebeb;
+    padding: 10%;
+    gap: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#github {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-image: url("https://i.postimg.cc/TwyH766C/IMG-1558.png");
+    background-size: cover;
+    transition: background-image 0.3s;
+}
+
+#github:hover {
+    background-image: url("https://i.postimg.cc/02gX5FYJ/IMG/1557.png");
+}
