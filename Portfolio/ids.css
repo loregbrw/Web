@@ -13,15 +13,6 @@
     font-size: 3rem;
 }
 
-#sobre {
-    font-family: 'Josefin Sans', sans-serif;
-    color: rgb(83, 83, 83);
-    font-weight: 600;
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-    text-align: justify;
-}
-
 #home-section {
     padding: 10%;
     gap: 10%;
@@ -38,14 +29,24 @@
     padding: 10%;
     display: flex;
     flex-direction: column;
+    /* align-items:flex-start; */
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
 }
 
+#center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
 #third-section {
     padding: 10%;
-    gap: 10%;
+    gap: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,8 +57,8 @@
 #fourth-section {
     background-color: #ebebeb;
     padding: 10%;
-    gap: 10%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -77,4 +78,87 @@
 
 #github:hover {
     background-image: url("https://i.postimg.cc/02gX5FYJ/IMG/1557.png");
+}
+
+#icons {  
+    display: flex;
+    /* align-self: flex-end; */
+    align-items: flex-end;
+    height: 10%;
+}
+
+#icon-image {
+    height: 50px;
+    margin: 0 5px;
+}
+
+#pacman {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 50%;
+    width: 100%;
+}
+
+#iot {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 50%;
+    width: 100%;
+}
+
+.article-projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 77%;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+#pacman-aside-projects {
+    width: 23%;
+    height: 100%;
+
+    justify-content: right;
+}
+
+#iot-aside-projects {
+    width: 23%;
+    height: 100%;
+
+    justify-content: left;
+}
+
+
+.image-projects {
+    height: 100%;
+}
+
+#form1 {
+    width: 100%;
+    height: 30px;
+    border: 2px solid #51718a;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 1% 0;
+}
+
+#form2 {
+    width: 100%;
+    height: 100px;
+    border: 2px solid #51718a;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 1% 0;
 }

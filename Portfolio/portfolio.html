@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorena Gobara Falci</title>
-    <!-- <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4703/4703650.png" type="image/png"> -->
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3439/3439971.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="portfolio.css">
     <link rel="stylesheet" type="text/css" href="class.css">
@@ -14,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
+        <nav>
             <div>
                 <ul>
                     <li><a href="#home-section">Lorena Gobara Falci</a></li>
@@ -30,23 +29,23 @@
         </nav>
     </header>
 
-    <main>
-        <div id="home-section">
-            <article>
-                <h1 id="Lorena">Hello World!</h1>
-                <br>
-                <p id="sobre">
-                    Meu nome é Lorena, tenho 19 anos, e sou uma programadora de Curitiba-PR. Atualmente, estou cursando o primeiro semestre
-                    de Engenharia de Software na UniSenai e trabalho como Jovem Aprendiz de Soluções Digitais na Robert Bosch Ltda,
-                    onde também faço o curso técnico em Desenvolvimento de Sistemas pelo SENAI.
-                    Estou sempre buscando aprender coisas novas e gosto muito de programar.
-                </p>
-            </article>
-            <aside>
-                <img src="https://i.postimg.cc/mZ1s9QFf/asdffsdfds.jpg" id="container">
-            </aside>
-        </div>
-        <div id="second-section">
+    <div id="home-section">
+        <article>
+            <h1 id="Lorena">Hello World!</h1>
+            <br>
+            <p class="font">
+                Meu nome é Lorena, tenho 19 anos, e sou uma programadora de Curitiba-PR. Atualmente, estou cursando o primeiro semestre
+                de Engenharia de Software na UniSenai e trabalho como Jovem Aprendiz de Soluções Digitais na Robert Bosch Ltda,
+                onde também faço o curso técnico em Desenvolvimento de Sistemas pelo SENAI.
+                Estou sempre buscando aprender coisas novas e gosto muito de programar.
+            </p>
+        </article>
+        <aside>
+            <img src="https://i.postimg.cc/mZ1s9QFf/asdffsdfds.jpg" id="container">
+        </aside>
+    </div>
+    <div id="second-section">
+        <div id="center">
             <h1 class="titulo">Minhas Habilidades</h1>
             <div class="metade">
                 <div class="Habilidades">
@@ -55,27 +54,76 @@
                         Coisas (IoT). Também desenvolvi proficiência em ferramentas como Excel,
                         VBA e Power BI, essenciais para análise de dados. Atualmente estou aprendendo web,
                         HTML e CSS.
+                    </p>
                 </div>
                 <div class="Habilidades">
-                    <ul class="font">
+                    <p class="font">
                         No Senai, expandi meus conhecimentos em C e C++, aprofundei-me em bancos de dados 
                         e adquiri conhecimentos em eletroeletrônica. Também fiz aulas de Inglês a parte, tendo um nível avançado.
-                         Gosto de sempre aprender coisas novas.
-                    </ul>
+                        Gosto de sempre aprender coisas novas.
+                    </p>
                 </div>
             </div>
-            sdffdsdfgsfdg
         </div>
-        <div id="third-section">
-            sdfdsffdfdfdsfds
+        <div id="icons">
+            <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" id="icon-image">
+            <img src="https://cdn-icons-png.flaticon.com/512/154/154878.png" id="icon-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" id="icon-image">
         </div>
-        <div id="fourth-section">
+    </div>
+    <div id="third-section">
+        <div id="pacman">
+            <article class="article-projects right">
+                <h1 class="titulo" style="text-align: right;">Pacman em C</h1>
+                <p class="font" >
+                    Projeto feito no Senai, em grupo junto da Maria Carolina Bevervanso e Gabriela Laureano. É uma réplica simples do jogo clássico do
+                    Pacman feita em linguagem C, roda direto no terminal e sua jogabilidade é feita recebendo inputs do teclado com as teclas WASD e
+                    Enter. Utiliza bibliotecas de som para música e efeitos sonoros, além de customização para o terminal, projeto realizado em duas
+                    semanas.
+                </p>
+                <a href="https://github.com/loregbrw/PacmanGame.git"><p class="button">Repositório</p></a>
+            </article>
+            <aside id="pacman-aside-projects">
+                <img src="https://i.postimg.cc/9XDz4TCM/20240311-141326-0000.png" class="image-projects">
+            </aside>
+        </div>
+        <div id="iot">
+            <aside id="iot-aside-projects">
+                <img src="https://i.postimg.cc/vTH92RHb/Design-sem-nome-20240311-141438-0000.png" class="image-projects">
+                
+            </aside>
+            <article class="article-projects left">
+                <h1 class="titulo" style="text-align: left;">Controle Bluetooth IoT</h1>
+                <p class="font" >
+                    Projeto de IoT feito na Bosch, em grupo junto de Murylo Saladino, Maria Vitória Pimenta e Andrey Koch. Utilizando a biblioteca BleGamepad.h,
+                    montamos um controle de videogame bluetooth com a ESP32, podendo jogar pelo celular usando os inputs dos sensores. Projeto também realizado
+                    em duas semanas.
+                </p>
+                <a href="https://github.com/MuryloSaladino/GamepadControllerIOT.git"><p class="button left">Repositório</p></a>
+            </article>
+        </div>
+    </div>
+    <div id="fourth-section">
+        <h1 class="titulo">Contato</h1>
+        <div class="metade">
+            <div class="Habilidades">
+                <form>
+                    <input type="text" id="form1" placeholder="Digite aqui seu nome:">
+                    <input type="text" id="form2" placeholder="Digite aqui seu nome:">
+                </form>
+            </div>
+            <div class="Habilidades">
+                <p class="font">
+                    No Senai, expandi meus conhecimentos em C e C++, aprofundei-me em bancos de dados 
+                    e adquiri conhecimentos em eletroeletrônica. Também fiz aulas de Inglês a parte, tendo um nível avançado.
+                    Gosto de sempre aprender coisas novas.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <li><a href="https://github.com/loregbrw"><div id="github"></div></a></li>
+    </footer>
 
-        </div>
-        <footer>
-            <li><a href="https://github.com/loregbrw"><div id="github"></div></a></li>
-        </footer>
-
-    </main>
 </body>
 </html>

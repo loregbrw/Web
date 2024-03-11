@@ -12,7 +12,7 @@
     font-size: 2.5rem;
     justify-content: center;
     text-align: center;
-    margin: 5%;
+    margin: 2% 0;
     width: 100%;
 }
 
@@ -33,3 +33,21 @@
     text-align: justify;
 }
 
+.image-projetos {
+    display: flex;
+    height: 100%;
+}
+
+.button {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #142c41;
+    transition: color 0.3s;
+    padding: 2% 0;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #51718a;
+}
