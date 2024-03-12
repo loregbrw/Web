@@ -21,7 +21,7 @@ header {
     position: fixed;
     width: 100%;
     background-color: white;
-    height: 70px;
+    padding: 1%;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -29,7 +29,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 1.5%;
+    padding: 10px;
 }
 
 nav ul {
@@ -76,13 +76,13 @@ button {
 }
 
 footer {
-    padding: 10%;
+    padding: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 30vh;
+    height: auto;
 }
 
 button:hover {
@@ -97,6 +97,8 @@ input {
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     height: 30px;
+
+    font-size: 1rem;
 }
 
 textarea {
@@ -108,8 +110,9 @@ textarea {
     width: 100%;
     height: 200px;
     box-sizing: border-box;
-    resize: vertical;
+    resize: none;
     word-wrap: break-word;
+    font-size: 1rem;
 }
 
 input:focus,

@@ -29,7 +29,7 @@
     color: #51718a;
     font-weight: 600;
     font-size: 1.2rem;
-    line-height: 1.3rem;
+    line-height: 1.3;
     text-align: center;
 }
 .font {
@@ -37,7 +37,7 @@
     color: rgb(83, 83, 83);
     font-weight: 600;
     font-size: 1.3rem;
-    line-height: 1.5rem;
+    line-height: 1.5;
     text-align: justify;
 }
 
@@ -64,7 +64,7 @@
     justify-content: center;
     flex-direction: column;
     height: 100%;
-    width: 77%;
+    width: 100%;
 }
 
 .right {
@@ -81,8 +81,4 @@
 
 .image-projects {
     height: 100%;
-}
-
-.small {
-    font-size: 1rem;
 }
