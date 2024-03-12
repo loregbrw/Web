@@ -24,6 +24,14 @@
     width: 100%;
 }
 
+.smallfont {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #51718a;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    text-align: center;
+}
 .font {
     font-family: 'Josefin Sans', sans-serif;
     color: rgb(83, 83, 83);

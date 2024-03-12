@@ -52,10 +52,23 @@ aside {
     width: fit-content;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+button {
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #142c41;
+    transition: background-color 0.3s;
+
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: center;
 }
 
+.small {
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #51718a;
+}
