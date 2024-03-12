@@ -21,7 +21,6 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-    justify-content: space-between;
 }
 
 #second-section {
@@ -29,7 +28,6 @@
     padding: 10%;
     display: flex;
     flex-direction: column;
-    /* align-items:flex-start; */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -52,16 +50,6 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-}
-
-footer {
-    padding: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 30vh;
 }
 
 #footer {
@@ -100,7 +88,6 @@ footer {
 
 #icons {  
     display: flex;
-    /* align-self: flex-end; */
     align-items: flex-end;
     height: 10%;
 }
@@ -111,81 +98,31 @@ footer {
 }
 
 #pacman {
-    flex: 1;
+    gap: 5%;
     display: flex;
-    align-items: center;
-    justify-content: left;
+    align-items:flex-start;
+    justify-content: center;
     height: 50%;
     width: 100%;
 }
 
 #iot {
-    flex: 1;
+    gap: 5%;
     display: flex;
-    align-items: center;
-    justify-content: left;
+    align-items:flex-start;
+    justify-content: center;
     height: 50%;
     width: 100%;
 }
 
-.article-projects {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    width: 77%;
-}
-
-.right {
-    text-align: right;
-}
-
-.left {
-    text-align: left;
-}
-
-.center {
-    text-align: center;
-}
-
 #pacman-aside-projects {
-    width: 23%;
     height: 100%;
-
+    max-width: 100%;
     justify-content: right;
 }
 
 #iot-aside-projects {
-    width: 23%;
     height: 100%;
-
-    justify-content: left;
+    max-width: 100%;
+    justify-content: right;
 }
-
-
-.image-projects {
-    height: 100%;
-}
-
-input {
-    border: 2px solid #51718a;
-    border-radius: 3px;
-    padding: 1%;
-    margin: 1% 0;
-    font-family: 'Josefin Sans', sans-serif;
-    width: 100%;
-    height: 30px;
-}
-
-textarea {
-    border: 2px solid #51718a;
-    border-radius: 3px;
-    padding: 1%;
-    margin: 1% 0;
-    font-family: 'Josefin Sans', sans-serif;
-    width: 100%;
-    height: 200px;
-    box-sizing: border-box;
-    resize: vertical;
-    word-wrap: break-word;
-  }

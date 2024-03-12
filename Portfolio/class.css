@@ -53,9 +53,36 @@
     color: #142c41;
     transition: color 0.3s;
     padding: 2% 0;
-    text-decoration: none;
 }
 
 .button:hover {
     color: #51718a;
+}
+
+.article-projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 77%;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.image-projects {
+    height: 100%;
+}
+
+.small {
+    font-size: 1rem;
 }
