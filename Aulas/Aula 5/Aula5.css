@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a  {
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+footer > div {
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
