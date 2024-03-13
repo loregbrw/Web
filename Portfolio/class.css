@@ -24,6 +24,16 @@
     width: 100%;
 }
 
+#center > .metade {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#center > .metade .Habilidades {
+    width: 40%;
+    min-width: 300px;
+}
+
+
 .smallfont {
     font-family: 'Josefin Sans', sans-serif;
     color: #51718a;
