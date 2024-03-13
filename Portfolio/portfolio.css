@@ -55,6 +55,10 @@ article {
     width: 60%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 aside {
     display: flex;
     width: fit-content;
