@@ -19,7 +19,7 @@ nav a:hover {
 }
 
 footer > div {
-    background-color: rgb(58, 58, 58);
+    background-color: #595959;
     color: white;
 }
 
@@ -32,4 +32,12 @@ footer {
 .carousel{
     margin-top: 5%;
     margin-bottom: 10%;
+}
+
+header {
+    width: 100%;
+}
+
+header > div {
+    
 }
