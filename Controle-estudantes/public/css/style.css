@@ -1,0 +1,79 @@
+main {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+body {
+    background-color: #f2f4f8;
+}
+
+.select {
+    display: flex;
+    justify-content: flex-end;
+}
+
+select {
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.select div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.big {
+    font-size: 2rem;
+}
+.small {
+    font-size: 0.9rem;
+}
+
+.alunos {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.aluno {
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 3px;
+    padding: 5px;
+
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    width: 25%;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+p {
+    margin: 0;
+}
+
+.button {
+    padding: 3px;
+    width: 100%;
+    background-color: rgb(179, 179, 179);
+    border-radius: 1.5px;
+}
+
+.button:hover {
+    filter: brightness(0.8);
+}
