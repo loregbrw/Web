@@ -31,14 +31,16 @@ input {
     border: 1px solid gray;
     border-radius: 3px;
     width: 100%;
+    padding: 5px;
 }
 
 form select {
     width: 100%;
+    padding: 5px;
 }
 
 .cadastro-img {
-    width: 35%;
+    width: 150px;
     align-self: center;
     border-radius: 50%;
 }
@@ -46,3 +48,5 @@ form select {
 input[type="file"] {
     display: none;
   }
+
+  

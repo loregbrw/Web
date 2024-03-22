@@ -14,19 +14,19 @@
 <body>
     <header>
         <nav>
-            <a class="navbar-brand font control" href="./index.ejs"><span class="controle bold">CONTROLE</span> de Estudantes</a>
+            <a class="navbar-brand font control" href="/"><span class="controle bold">CONTROLE</span> de Estudantes</a>
             <ul>
                 <li>
                     <span class="active bold font" aria-current="page">Cadastrar: </span>
                 </li>
                 <li>
-                    <a class="nav-link font control" href="./alunos.ejs">Alunos</a>
+                    <a class="nav-link font control" href="/alunos">Alunos</a>
                 </li>
                 <li>
                     <span class="font"> | </span>
                 </li>
                 <li>
-                    <a class="nav-link font control" href="./salas.ejs">Salas</a>
+                    <a class="nav-link font control" href="/salas">Salas</a>
                 </li>
             </ul>
         </nav>
@@ -37,12 +37,9 @@
             <div>
                 <span class="font">Salas de Aula:</span>
                 <select class="font small">
-                    <option>Todas as Salas</option>
-                    <option>TI</option>
-                    <option>Manufatura</option>
-                    <option>Mecatrônica</option>
-                    <option>Cibersistemas</option>
-                    <option>Analise de dados</option>
+                    <% salas.forEach (i => { %>
+                        <option value="<%- i.Nome %>"><%- i.Nome %></option>
+                    <% }) %>
                   </select>
             </div>
         </div>
@@ -50,54 +47,14 @@
         <div class="alunos">
             <p class="font bold big">Alunos</p>
             <div class="alunos">
-                <div class="aluno">
-                    <img src="img/usuario.png" class="img">
-                    <p class="font bold">Nome Sobrenome</p>
-                    <p class="font small">Idade: 19</p>
-                    <button class="button font bold small">Editar</button>
-                </div>
-                <div class="aluno">
-                    <img src="img/usuario.png" class="img">
-                    <p class="font bold">Nome Sobrenome</p>
-                    <p class="font small">Idade: 19</p>
-                    <button class="button font bold small">Editar</button>
-                </div>
-                <div class="aluno">
-                    <img src="img/usuario.png" class="img">
-                    <p class="font bold">Nome Sobrenome</p>
-                    <p class="font small">Idade: 19</p>
-                    <button class="button font bold small">Editar</button>
-                </div>
-                <div class="aluno">
-                    <img src="img/usuario.png" class="img">
-                    <p class="font bold">Nome Sobrenome</p>
-                    <p class="font small">Idade: 19</p>
-                    <button class="button font bold small">Editar</button>
-                </div>
-                <div class="aluno">
-                    <img src="img/usuario.png" class="img">
-                    <p class="font bold">Nome Sobrenome</p>
-                    <p class="font small">Idade: 19</p>
-                    <button class="button font bold small">Editar</button>
-                </div>
-                <div class="aluno">
-                    <img src="img/usuario.png" class="img">
-                    <p class="font bold">Nome Sobrenome</p>
-                    <p class="font small">Idade: 19</p>
-                    <button class="button font bold small">Editar</button>
-                </div>
-                <div class="aluno">
-                    <img src="img/usuario.png" class="img">
-                    <p class="font bold">Nome Sobrenome</p>
-                    <p class="font small">Idade: 19</p>
-                    <button class="button font bold small">Editar</button>
-                </div>
-                <div class="aluno">
-                    <img src="img/usuario.png" class="img">
-                    <p class="font bold">Nome Sobrenome</p>
-                    <p class="font small">Idade: 19</p>
-                    <button class="button font bold small">Editar</button>
-                </div>
+                <% alunos.forEach (i => {%>
+                    <div class="aluno">
+                        <img src="<%- i.Foto %>" class="img">
+                        <p class="font bold"><%- i.Nome %></p>
+                        <p class="font small">Idade: <%- i.Idade %></p>
+                        <button class="button font bold small">Editar</button>
+                    </div>
+                <% }) %>
             </div>
         </div>
     </main>

@@ -15,6 +15,7 @@ header {
     z-index: 100;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     height: 50px;
+    background-color: #f2f4f8;
 }
 
 header > nav {

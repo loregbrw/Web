@@ -15,19 +15,19 @@
 <body>
     <header>
         <nav>
-            <a class="navbar-brand font control" href="./index.ejs"><span class="controle bold">CONTROLE</span> de Estudantes</a>
+            <a class="navbar-brand font control" href="/"><span class="controle bold">CONTROLE</span> de Estudantes</a>
             <ul>
                 <li>
                     <span class="active bold font" aria-current="page">Cadastrar: </span>
                 </li>
                 <li>
-                    <a class="nav-link font control" href="./alunos.ejs">Alunos</a>
+                    <a class="nav-link font control" href="/alunos">Alunos</a>
                 </li>
                 <li>
                     <span class="font"> | </span>
                 </li>
                 <li>
-                    <a class="nav-link font control" href="./salas.ejs">Salas</a>
+                    <a class="nav-link font control" href="/salas">Salas</a>
                 </li>
             </ul>
         </nav>
@@ -35,17 +35,17 @@
 
     <main class="form">
         <div>
-            <form>
+            <form action="/salas" method="post">
                 <p class="font bold big">Cadastrar uma nova sala</p>
 
                 <div>
                     <label class="font small" for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" min="1" required>
+                    <input type="text" id="nome" name="nome_sala" min="1" required>
                 </div>
               
                 <div>
                     <label class="font small" for="capacidade">Capacidade:</label>
-                    <input type="number" id="capacidade" name="capacidade" min="1" required>
+                    <input type="number" id="capacidade" name="capacidade_sala" min="1" required>
                 </div>
               
                 <button type="submit" class="button bold">Enviar</button>
