@@ -58,7 +58,8 @@ select {
 }
 
 .img {
-    width: 25%;
+    width: 100px;
+    height: 100px;
     margin: 5px;
     border-radius: 50%;
 }
@@ -68,6 +69,10 @@ p {
 }
 
 .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 3px;
     width: 100%;
     background-color: rgb(179, 179, 179);
@@ -76,4 +81,9 @@ p {
 
 .button:hover {
     filter: brightness(0.8);
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }

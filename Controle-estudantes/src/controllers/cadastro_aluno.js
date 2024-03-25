@@ -15,12 +15,19 @@ module.exports = {
 
         const dados = req.body;
 
+        let foto;
+        if (req.file) {
+            foto = req.file.filename;
+        } else {
+            foto = 'usuario.png';
+        }
+        console.log(req.body);
         await aluno.create({
-            Foto: dados.foto_aluno,
+            Foto: foto,
             Nome: dados.nome_aluno,
             Idade: dados.idade_aluno,
             Sexo: dados.sexo_aluno,
-            Sala: dados.sala_aluno
+            IDSala: dados.sala_aluno
         });
 
         res.redirect('/');

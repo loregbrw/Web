@@ -41,6 +41,7 @@ form select {
 
 .cadastro-img {
     width: 150px;
+    height: 150px;
     align-self: center;
     border-radius: 50%;
 }
